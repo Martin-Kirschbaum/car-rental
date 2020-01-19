@@ -1,10 +1,11 @@
 <?php
 $this->headLink()
     ->prependStylesheet('https://use.fontawesome.com/releases/v5.0.6/css/all.css')
-    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+    ->prependStylesheet('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 $this->inlineScript()
-    ->prependFile('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
-    ->prependFile('https://code.jquery.com/jquery-3.3.1.min.js');
+    ->prependFile('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
+    ->prependFile('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+    ->prependFile('https://code.jquery.com/jquery-3.4.1.slim.min.js');
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,11 +14,11 @@ $this->inlineScript()
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="shortcut icon" href="https://framework.zend.com/ico/favicon.ico" />
-    <?=$this->headTitle('zend-expressive')->setSeparator(' - ')->setAutoEscape(false)?>
+    <?=$this->headTitle('Car Rental')->setSeparator(' - ')->setAutoEscape(false)?>
     <?=$this->headMeta()?>
     <?=$this->headLink()?>
     <style>
-        body { padding-top: 70px; }
+        body { padding-top: 0px; }
         .app { min-height: 100vh; }
         .app-footer { padding-bottom: 1em; }
         .zf-green, h2 a { color: #68b604; }
@@ -25,7 +26,7 @@ $this->inlineScript()
 </head>
 <body class="app">
     <header class="app-header">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" role="navigation">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,17 +34,12 @@ $this->inlineScript()
                     </button>
                     <!-- Brand -->
                     <a class="navbar-brand" href="<?=$this->url('home')?>">
-                        <img src="https://framework.zend.com/images/logos/zf-logo-mark.png" alt="Zend Expressive" height="28" />
+                        Car Rental
                     </a>
                 </div>
                 <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="https://docs.zendframework.com/zend-expressive" target="_blank" class="nav-link">
-                                <i class="fa fa-book"></i> Docs
-                            </a>
-                        </li>
                         <li class="nav-item">
                             <a href="https://github.com/zendframework/zend-expressive" target="_blank" class="nav-link">
                                 <i class="fa fa-wrench"></i> Contribute
@@ -54,7 +50,15 @@ $this->inlineScript()
                                 Ping Test
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="https://docs.zendframework.com/zend-expressive" target="_blank" class="nav-link">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                        </li>
                     </ul>
+                    <span class="navbar-text">
+                        Hello
+                    </span>
                 </div>
             </div>
         </nav>

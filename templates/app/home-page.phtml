@@ -1,16 +1,62 @@
 <?php $this->headTitle('Home'); ?>
 
-<div class="jumbotron">
-    <h1>Welcome to <span class="zf-green">zend-expressive</span></h1>
-    <p>
-        Congratulations! You have successfully installed the
-        <a href="https://github.com/zendframework/zend-expressive-skeleton" target="_blank">zend-expressive skeleton application</a>.
-        This skeleton can serve as a simple starting point for you to begin building your application.
-    </p>
-    <p>
-        Expressive builds on zend-stratigility to provide a minimalist PSR-7 middleware framework for PHP.
-    </p>
+<form>
+
+</form>
+
+
+<div class="row">
+    <div class="col text-center">
+        <h2>Vyberte si svoje auto</h2>
+        <p>lOREM ipsum</p>
+
+        <div class="btn-group" role="group">
+            <a href="#" class="btn btn-light">Najlepsie ponuky</a>
+            <a href="#" class="btn btn-primary">Ekon</a>
+            <a href="#" class="btn btn-light">Premium</a>
+        </div>
+    </div>
 </div>
+
+<br>
+
+
+<div class="row row-cols-1 row-cols-md-4">
+
+    <?php
+     $names = [
+         'Škoda Octavia Combi',
+         'Škoda Octavia',
+         'Mazda 3 sedan',
+         'Audi A3 sportback',
+         'Range Rover',
+         'Nissan Qashqai',
+         'Seat Ateca',
+         'BMW 225xe',
+     ];
+    ?>
+
+    <?php for ($i = 0; $i <= 7; ++$i) : ?>
+
+    <div class="col mb-4">
+        <div class="card text-center">
+            <img src="/img/car<?= $i ?>.jpg" class="card-img-top p-3" alt="<?= $names[$i] ?>">
+            <div class="card-body">
+                <h5 class="card-title"><?= $names[$i] ?></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                <div class="btn-group" role="group">
+                    <a href="#" class="btn btn-primary">Objednať teraz</a>
+                    <a href="#" class="btn btn-secondary">Detaily</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php endfor; ?>
+
+</div>
+
 
 <div class="row">
     <div class="col-md-4">
