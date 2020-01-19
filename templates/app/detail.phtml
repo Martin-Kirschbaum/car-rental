@@ -1,0 +1,15 @@
+<?php
+
+use App\Model\Car;
+
+$car = Car::fromSlug($this->slug)
+
+?>
+
+<h1><?= $car->getName() ?></h1>
+
+<img src="<?= $car->getFullImageUrl() ?>">
+
+<div>
+ouiguyu
+</div>
