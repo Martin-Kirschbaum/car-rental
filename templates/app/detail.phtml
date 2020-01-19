@@ -2,7 +2,9 @@
 
 use App\Model\Car;
 
-$car = Car::fromSlug($this->slug)
+$car = Car::fromSlug($this->slug);
+
+$this->headTitle($car->getName());
 
 ?>
 
