@@ -2,7 +2,7 @@
 
 use App\Model\Car;
 
-$car = Car::fromSlug($this->slug);
+$car = Car::fromId($this->id);
 
 $this->headTitle($car->getName());
 
@@ -13,5 +13,50 @@ $this->headTitle($car->getName());
 <img src="<?= $car->getFullImageUrl() ?>">
 
 <div>
-ouiguyu
+    <table class="table table-borderless">
+        <thead>
+        <tr>
+            <th>Cena prenájmu:</th>
+            <td><?= $car->getPrice() ?>€/deň</td>
+            <th>Najazdené:</th>
+            <td>2 358 km</td>
+            <th>Zdvihový objem:</th>
+            <td>1 498 cm3</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Značka:</th>
+            <td><?= $car->getCarBrand() ?></td>
+            <th>Palivo:</th>
+            <td>benzín + CNG</td>
+            <th>Počet dverí:</th>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Model:</th>
+            <td><?= $car->getCarModel() ?></td>
+            <th>Prevodovka:</th>
+            <td><?= $car->hasAutomaticTransmission() ? 'automat' : 'manuál' ?></td>
+            <th>Počet sedadiel:</th>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Karoséria:</th>
+            <td><?= $car->getCarBodywork() ?></td>
+            <th>Pohon:</th>
+            <td>predný náhon</td>
+            <th>Farba:</th>
+            <td>červená corrida</td>
+        </tr>
+        <tr>
+            <th>Rok výroby:</th>
+            <td><?= $car->getFabricationDate() ?></td>
+            <th>Výkon:</th>
+            <td>96 kW</td>
+            <th>Typ výbavy:</th>
+            <td>Ambition</td>
+        </tr>
+        </tbody>
+    </table>
 </div>

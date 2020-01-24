@@ -30,7 +30,7 @@ class DetailHandler implements RequestHandlerInterface
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         return new HtmlResponse($this->template->render('app::detail', [
-            'slug' => $request->getAttribute('slug'),
+            'id' => $request->getAttribute('id'),
         ]));
     }
 }
