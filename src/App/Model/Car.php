@@ -17,19 +17,31 @@ class Car
             'carModel' => 'OCTAVIA',
             'carBodywork' => 'combi',
             'fabricationDate' => '2019',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1498',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'červená corrida',
+            'typeOfEquipment' => 'Ambition',
         ],
         'skoda-octavia' => [
             'name' => 'Škoda Octavia',
             'image' => 'car1.jpg',
-            'power' => 82,
+            'power' => 77,
             'autoTransmission' => false,
-            'drivenKm' => 18275,
+            'drivenKm' => 104275,
             'fuel' => 'diesel',
-            'price' => '30',
+            'price' => '21',
             'carBrand' => 'ŠKODA',
             'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
-            'fabricationDate' => '2019',
+            'carBodywork' => 'hatchback',
+            'fabricationDate' => '2013',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1498',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'biela',
+            'typeOfEquipment' => 'Ambiente',
         ],
         'mazda-3-sedan' => [
             'name' => 'Mazda 3 sedan',
@@ -38,11 +50,17 @@ class Car
             'autoTransmission' => true,
             'drivenKm' => 7566,
             'fuel' => 'benzín',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
+            'price' => '29',
+            'carBrand' => 'Mazda',
+            'carModel' => '3',
+            'carBodywork' => 'sedan',
             'fabricationDate' => '2019',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1998',
+            'numberOfSeats' => '4',
+            'numberOfDoors' => '4',
+            'carColor' => 'biela',
+            'typeOfEquipment' => '-',
         ],
         'audi-A3-sportback' => [
             'name' => 'Audi A3 sportback',
@@ -51,24 +69,36 @@ class Car
             'autoTransmission' => false,
             'drivenKm' => 5449,
             'fuel' => 'benzín',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
+            'price' => '38',
+            'carBrand' => 'AUDI',
+            'carModel' => 'A3',
+            'carBodywork' => 'sportback',
             'fabricationDate' => '2019',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1498',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'biela',
+            'typeOfEquipment' => '-',
         ],
         'range-rover' => [
             'name' => 'Range Rover',
             'image' => 'car4.jpg',
-            'power' => 410,
+            'power' => 405,
             'autoTransmission' => true,
             'drivenKm' => 9750,
             'fuel' => 'benzín',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
+            'price' => '72',
+            'carBrand' => 'Land Rover',
+            'carModel' => 'Range Rover',
+            'carBodywork' => 'SUV',
             'fabricationDate' => '2019',
+            'carPropulsion' => '4x4',
+            'engineDisplacement' => '5000',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'biela',
+            'typeOfEquipment' => '-',
         ],
         'nissan-qashqai' => [
             'name' => 'Nissan Qashqai',
@@ -77,11 +107,17 @@ class Car
             'autoTransmission' => true,
             'drivenKm' => 12985,
             'fuel' => 'benzin',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
-            'fabricationDate' => '2019',
+            'price' => '41',
+            'carBrand' => 'NISSAN',
+            'carModel' => 'qashqai',
+            'carBodywork' => 'SUV',
+            'fabricationDate' => '2017',
+            'carPropulsion' => '4x4',
+            'engineDisplacement' => '1998',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'modrá',
+            'typeOfEquipment' => '-',
         ],
         'seat-ateca' => [
             'name' => 'Seat Ateca',
@@ -90,11 +126,17 @@ class Car
             'autoTransmission' => true,
             'drivenKm' => 24851,
             'fuel' => 'benzin',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
-            'carBodywork' => 'combi',
+            'price' => '44',
+            'carBrand' => 'SEAT',
+            'carModel' => 'ateca',
+            'carBodywork' => 'SUV',
             'fabricationDate' => '2019',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1498',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'biela',
+            'typeOfEquipment' => '-',
         ],
         'bmw-225xe' => [
             'name' => 'BMW 225xe',
@@ -103,11 +145,17 @@ class Car
             'autoTransmission' => true,
             'drivenKm' => 13439,
             'fuel' => 'benzin',
-            'price' => '30',
-            'carBrand' => 'ŠKODA',
-            'carModel' => 'OCTAVIA',
+            'price' => '37',
+            'carBrand' => 'BMW',
+            'carModel' => '225xe',
             'carBodywork' => 'combi',
             'fabricationDate' => '2019',
+            'carPropulsion' => 'predný náhon',
+            'engineDisplacement' => '1498',
+            'numberOfSeats' => '5',
+            'numberOfDoors' => '5',
+            'carColor' => 'biela',
+            'typeOfEquipment' => '-',
         ],
     ];
 
@@ -194,5 +242,35 @@ class Car
     public function getFabricationDate(): int
     {
         return self::CARS[$this->id]['fabricationDate'];
+    }
+
+    public function getCarPropulsion(): string
+    {
+        return self::CARS[$this->id]['carPropulsion'];
+    }
+
+    public function getEngineDisplacement(): int
+    {
+        return self::CARS[$this->id]['engineDisplacement'];
+    }
+
+    public function getNumberOfSeats(): int
+    {
+        return self::CARS[$this->id]['numberOfSeats'];
+    }
+
+    public function getNumberOfDoors(): int
+    {
+        return self::CARS[$this->id]['numberOfDoors'];
+    }
+
+    public function getCarColor(): string
+    {
+        return self::CARS[$this->id]['carColor'];
+    }
+
+    public function getTypeOfEquipment(): string
+    {
+        return self::CARS[$this->id]['typeOfEquipment'];
     }
 }

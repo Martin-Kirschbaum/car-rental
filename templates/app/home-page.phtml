@@ -36,7 +36,7 @@ $this->headTitle('Domov');
             <img src="<?= $car->getSmallImageUrl() ?>" class="card-img-top p-3" alt="<?= $car->getName() ?>">
             <div class="card-body">
                 <h5 class="card-title"><?= $car->getName() ?></h5>
-                <span><h4>30€/deň</h4></span>
+                <span><h4><?= $car->getPrice() ?>€/deň</h4></span>
                 <p class="card-text">
                 <ul class="text-left">
                     <li><?= $car->getPower() ?> kW</li>

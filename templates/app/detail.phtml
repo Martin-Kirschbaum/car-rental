@@ -19,9 +19,9 @@ $this->headTitle($car->getName());
             <th>Cena prenájmu:</th>
             <td><?= $car->getPrice() ?>€/deň</td>
             <th>Najazdené:</th>
-            <td>2 358 km</td>
+            <td><?= $car->getDrivenKm() ?> km</td>
             <th>Zdvihový objem:</th>
-            <td>1 498 cm3</td>
+            <td><?= $car->getEngineDisplacement() ?> cm3</td>
         </tr>
         </thead>
         <tbody>
@@ -29,9 +29,9 @@ $this->headTitle($car->getName());
             <th>Značka:</th>
             <td><?= $car->getCarBrand() ?></td>
             <th>Palivo:</th>
-            <td>benzín + CNG</td>
+            <td><?= $car->getFuelType() ?></td>
             <th>Počet dverí:</th>
-            <td>5</td>
+            <td><?= $car->getNumberOfDoors() ?></td>
         </tr>
         <tr>
             <th>Model:</th>
@@ -39,23 +39,23 @@ $this->headTitle($car->getName());
             <th>Prevodovka:</th>
             <td><?= $car->hasAutomaticTransmission() ? 'automat' : 'manuál' ?></td>
             <th>Počet sedadiel:</th>
-            <td>5</td>
+            <td><?= $car->getNumberOfSeats() ?></td>
         </tr>
         <tr>
             <th>Karoséria:</th>
             <td><?= $car->getCarBodywork() ?></td>
             <th>Pohon:</th>
-            <td>predný náhon</td>
+            <td><?= $car->getCarPropulsion() ?></td>
             <th>Farba:</th>
-            <td>červená corrida</td>
+            <td><?= $car->getCarColor() ?></td>
         </tr>
         <tr>
             <th>Rok výroby:</th>
             <td><?= $car->getFabricationDate() ?></td>
             <th>Výkon:</th>
-            <td>96 kW</td>
+            <td><?= $car->getPower() ?> kW</td>
             <th>Typ výbavy:</th>
-            <td>Ambition</td>
+            <td><?= $car->getTypeOfEquipment() ?></td>
         </tr>
         </tbody>
     </table>
