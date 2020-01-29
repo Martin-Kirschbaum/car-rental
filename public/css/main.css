@@ -1,0 +1,30 @@
+.chooseCar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lorem {
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -30%;
+}
+
+nav {
+    margin-top: 30px;
+    margin-bottom: 440px;
+}
+
+.nav-item1 {
+    padding: 0px 10px 0px 10px;
+    transition: 0.3s;
+}
+
+.nav-item1:hover {
+    background-color: #ddd;
+}
+

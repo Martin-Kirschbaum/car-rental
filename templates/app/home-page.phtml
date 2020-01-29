@@ -2,24 +2,82 @@
 
 use App\Model\Car;
 
+$this->headLink()->prependStylesheet('/css/main.css');
 $this->headTitle('Domov');
 
 ?>
 
-<form>
+<div class="jumbotron">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="pickupPoint">Miesto vyzdvihnutia</label>
+                <input type="text" class="form-control" id="pickupPoint" placeholder="Mesto, Letisko, Stanica, atď.">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="handoverPoint">Miesto odovzdania</label>
+                <input type="text" class="form-control" id="handoverPoint" placeholder="Mesto, Letisko, Stanica, atď.">
+            </div>
+        </div>
 
-</form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="pickupDate">Čas vyzdvihnutia</label>
+                <input type="text" class="form-control" id="pickupDate" placeholder="<?= date('j. n. Y') ?>">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="handoverDate">Čas odovzdania</label>
+                <input type="text" class="form-control" id="handoverDate" placeholder="<?= date('j. n. Y') ?>">
+            </div>
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group col-md-3">
+                <select class="form-control" id="pickupHour">
+                    <?php for ($hour = 0; $hour <= 23; ++$hour) : ?>
+                        <option><?= sprintf('%02d', $hour) ?>h</option>
+                    <?php endfor; ?>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <select class="form-control" id="pickupMinute">
+                    <?php for ($minute = 0; $minute <= 50; $minute += 10) : ?>
+                        <option><?= sprintf('%02d', $minute) ?>m</option>
+                    <?php endfor; ?>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <select class="form-control" id="handoverHour">
+                    <?php for ($hour = 0; $hour <= 23; ++$hour) : ?>
+                        <option><?= sprintf('%02d', $hour) ?>h</option>
+                    <?php endfor; ?>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <select class="form-control" id="handoverMinute">
+                    <?php for ($minute = 0; $minute <= 50; $minute += 10) : ?>
+                        <option><?= sprintf('%02d', $minute) ?>m</option>
+                    <?php endfor; ?>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Hľadať</button>
+    </form>
+</div>
 
 
 <div class="row">
     <div class="col text-center">
-        <h2>VYBERTE SI SVOJE AUTO</h2>
-        <p>lOREM ipsum</p>
+        <h2 class="chooseCar">VYBERTE SI SVOJE AUTO</h2>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta<br/> efficitur ex ac porta. Nunc sed diam nisi. Fusce eget blandit neque.<br /> Pellentesque molestie mollis scelerisque.</p>
 
         <div class="btn-group" role="group">
-            <a href="#" class="btn btn-light">Najlepsie ponuky</a>
-            <a href="#" class="btn btn-primary">Ekon</a>
-            <a href="#" class="btn btn-light">Premium</a>
+            <a href="#" class="btn btn-light">Najlepšie ponuky</a>
+            <a href="#" class="btn btn-primary">Ekonomické autá</a>
+            <a href="#" class="btn btn-light">Prémiové autá</a>
         </div>
     </div>
 </div>

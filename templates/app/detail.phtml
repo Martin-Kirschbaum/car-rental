@@ -4,6 +4,7 @@ use App\Model\Car;
 
 $car = Car::fromId($this->id);
 
+$this->headLink()->prependStylesheet('/css/navDetail.css');
 $this->headTitle($car->getName());
 
 ?>

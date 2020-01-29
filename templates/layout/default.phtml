@@ -25,7 +25,8 @@ $this->inlineScript()
     </style>
 </head>
 <body class="app">
-    <header class="app-header">
+    <div class="app-header">
+        <div class="container">
         <nav class="navbar navbar-expand-sm navbar-light bg-white" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -40,28 +41,39 @@ $this->inlineScript()
                 <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="https://github.com/zendframework/zend-expressive" target="_blank" class="nav-link">
-                                <i class="fa fa-wrench"></i> Contribute
+                        <li class="nav-item1">
+                            <a href="#" class="nav-link">
+                                Náš tím
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a href="#" class="nav-link">
+                                Služby
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a href="#" class="nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a href="#" class="nav-link">
+                                Kontakt
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?=$this->url('api.ping')?>" class="nav-link">
-                                Ping Test
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://docs.zendframework.com/zend-expressive" target="_blank" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="fa fa-shopping-cart"></i>
                             </a>
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        Hello
+                        Prihlásenie
                     </span>
                 </div>
             </div>
         </nav>
+        </div>
     </header>
 
     <div class="app-content">
